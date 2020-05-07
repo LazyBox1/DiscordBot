@@ -4,8 +4,6 @@ const bot = new Client();
 
 const PREFIX = 'Lazy!';
 
-const token = 'NzA3MzU5MDQyMDE1NTkyNDU4.XrH2rQ.qsXJINZn_7WRKxskjX-E-AtZOSw';
-
 const request = require('request');
 const cheerio = require('cheerio');
 
@@ -91,4 +89,4 @@ function image(message){
 
 
 
-bot.login(token);
+bot.login(process.env.token);
